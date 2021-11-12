@@ -94,7 +94,7 @@ export default class Day<
             <Text style={[styles.text, textStyle]} {...textProps}>
               {dayjs(currentMessage.createdAt)
                 .locale(this.context.getLocale())
-                .format(dateFormat)}
+                .format(dateFormat).fromNow(true)}
             </Text>
           </View>
         </View>
